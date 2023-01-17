@@ -9,21 +9,17 @@ layout: base.html
       {% if date %}
       <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
       {% endif %} {% if tags %} {% assign tags = tags | filterTagList | sort %}
-      <ul class="cluster">
+      <ul class="cluster" role="list">
         {% for tag in tags %}
         <li>{{ tag }}</li>
         {% endfor %}
       </ul>
-
       {% endif %}
     </div>
   </header>
   <article class="wrapper | region | flow | prose">
     {% if description %}
-    <p class="tldr">
-      <span class="display"><mark>tldr</mark></span
-      >—{{ description }}
-    </p>
+    <p class="tldr"><mark class="display">tldr</mark> — {{ description }}</p>
     {% endif %} {{ content }}
   </article>
 </article>

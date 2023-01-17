@@ -25,6 +25,7 @@ const markdown = markdownIt({
     tabIndex: false,
     permalink: markdownItAnchor.permalink.headerLink({
       class: "heading-anchor",
+      safariReaderFix: true,
     }),
   })
   .use(markdownItMark)

@@ -1,4 +1,7 @@
 .page-header {
   --region-space-start: var(--space-s-m);
   --region-space-end: var(--space-s-m);
+  h1 {
+    font-size: var(--step-4);
+  }
 }

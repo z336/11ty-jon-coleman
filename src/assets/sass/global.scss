@@ -96,6 +96,30 @@ button {
   cursor: pointer;
 }
 
+mark {
+  background-color: var(--color-highlight);
+}
+
+// Mark accessibility
+mark::before,
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+mark::before {
+  content: " [highlight start] ";
+}
+
+mark::after {
+  content: " [highlight end] ";
+}
+
 :focus {
   outline: solid var(--color-dark) 0.2rem;
 }
