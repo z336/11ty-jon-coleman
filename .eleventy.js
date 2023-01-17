@@ -4,7 +4,7 @@ const markdown = require("./config/plugins/");
 const { posts, tagList } = require("./config/collections/");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/assets/sass/style.scss");
+  eleventyConfig.addWatchTarget("./src/assets/sass/");
 
   // Process Yaml files
   eleventyConfig.addDataExtension("yaml", load);
