@@ -120,6 +120,16 @@ mark::after {
   content: " [highlight end] ";
 }
 
+ul[role="list"],
+ol[role="list"] {
+  line-height: 1;
+}
+
+ul,
+ol {
+  line-height: 1.75;
+}
+
 :focus {
   outline: solid var(--color-dark) 0.2rem;
 }
@@ -127,4 +137,13 @@ mark::after {
 ::selection {
   color: var(--color-light);
   background-color: var(--color-dark);
+}
+
+footer {
+  --region-space-start: var(--space-l-xl);
+  --region-space-end: var(--space-l-xl);
+  --flow-space: var(--space-l-xl);
+  p + ul {
+    --flow-space: var(--space-3xs-2xs);
+  }
 }
