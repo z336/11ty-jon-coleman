@@ -5,8 +5,8 @@
   overflow: hidden;
   position: absolute;
   width: 1px;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 1.5rem;
   z-index: 999;
 }
 
@@ -15,9 +15,9 @@
   height: auto;
   overflow: visible;
   width: auto;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding: var(--space-s-m);
+  background-color: var(--color-highlight);
+  color: var(--color-dark);
+  padding: var(--space-xs);
   line-height: 1;
 }
 
