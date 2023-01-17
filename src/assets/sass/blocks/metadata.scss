@@ -1,0 +1,23 @@
+.metadata {
+  ul {
+    padding-block-start: var(--space-3xs-2xs);
+    padding-inline-start: 0;
+    margin-inline-start: -0.5rem;
+    list-style-type: none;
+
+    li:before {
+      display: inline-block;
+      width: 1.25em;
+      height: 0.65em;
+      background-image: url("/assets/images/hash.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60% auto;
+      /* alternative text rules */
+      content: "(tag)";
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 1.25em; /* the width of the icon */
+    }
+  }
+}

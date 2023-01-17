@@ -26,11 +26,21 @@
       type="font/woff"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="{{ '/assets/fonts/AlteHaasGroteskBold.ttf' | url }}"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <script>
+      // Firefox fouc bug fix, do not remove this empty script. See bug here: https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
+    </script>
     <script type="module" src="/assets/scripts/app.js" defer></script>
   </head>
   <body>
-    {% include 'partials/header.html' %}
+    {% include 'partials/site-header.html' %}
     <main id="main">{{ content }}</main>
-    {% include 'partials/footer.html' %}
+    {% include 'partials/site-footer.html' %}
   </body>
 </html>

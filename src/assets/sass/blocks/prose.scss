@@ -1,12 +1,16 @@
 .prose {
-  --flow-space: var(--space-xl-2xl);
-  --wrapper-max-width: 60rem;
-  mark {
-    background: var(--color-primary-glare);
+  --region-space-start: var(--space-m-l);
+  --region-space-end: var(--space-m-l);
+  --flow-space: var(--space-l-xl);
+  p,
+  ul,
+  ol,
+  blockquote {
+    max-width: var(--measure);
   }
 }
 
-// Make the flow space under headings and between multiple paragraphs
+// Flow space under headings and between multiple paragraphs
 .prose :is(h2, h3, h4) + *,
 p + p {
   --flow-space: var(--space-s-m);

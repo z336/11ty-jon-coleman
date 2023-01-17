@@ -1,10 +1,12 @@
 ---
-title: Home
+title: Hello
 layout: page.html
 permalink: /
 ---
 
-Thyme habanero golden creamy cauliflower alfredo banh mi salad rolls Vegan Ipsum Me apricot enchiladas elderberry chia seeds hemp seeds cherry spring Thai dragon pepper asian pear sesame soba noodles farro platter soba noodles.
+==**My name is Jon**== and I write for the web as a ==**technical and UX writer**==. I am also interested in ==**web development**==, ==**web design**==, and ==**accessibility**==.
 
-{% assign postslist = collections.posts %}
-{% include 'partials/postslist.html' %}
+This site is not tracking you, but you can subscribe to the [RSS](/feed/feed.xml/) feed if would like to track it.
+
+{% assign postslist = collections.posts | slice: 0, 3 %} {% include
+'partials/postslist.html' %}

@@ -1,7 +1,8 @@
-const { readableDate, htmlDateString, getFullYear } = require("./time");
+const { filterTagList, readableDate, htmlDateString, getFullYear } = require("./time");
 
 module.exports = {
-  readableDate,
-  htmlDateString,
+  filterTagList,
   getFullYear,
+  htmlDateString,
+  readableDate,
 };

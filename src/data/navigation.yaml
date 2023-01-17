@@ -1,5 +1,12 @@
-pages:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
+- page:
+  title: Home
+  url: /
+- page:
+  title: Writing
+  url: /writing/
+- page:
+  title: Notes
+  url: /notes/
+- page:
+  title: About
+  url: /about/

@@ -1,6 +1,7 @@
 const { load } = require("js-yaml");
-const { readableDate, htmlDateString, getFullYear } = require("./config/filters/index.js");
-const markdown = require("./config/plugins/index.js");
+const { filterTagList, getFullYear, htmlDateString, readableDate } = require("./config/filters/");
+const markdown = require("./config/plugins/");
+const { posts, tagList } = require("./config/collections/");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/sass/");
@@ -17,9 +18,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", readableDate);
   eleventyConfig.addFilter("htmlDateString", htmlDateString);
   eleventyConfig.addFilter("getFullYear", getFullYear);
+  eleventyConfig.addFilter("filterTagList", filterTagList);
 
   // Plugins
   eleventyConfig.setLibrary("md", markdown);
+
+  // Collections
+  eleventyConfig.addCollection("posts", posts);
+  eleventyConfig.addCollection("tagList", tagList);
 
   return {
     dir: {

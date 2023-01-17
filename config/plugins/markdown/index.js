@@ -1,6 +1,7 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-// const { slugify } = require("../../utils/index.js");
+const markdownItMark = require("markdown-it-mark");
+const markdownItToc = require("markdown-it-toc-done-right");
 
 const anchorSlugify = (s) =>
   encodeURIComponent(
@@ -25,6 +26,12 @@ const markdown = markdownIt({
     permalink: markdownItAnchor.permalink.headerLink({
       class: "heading-anchor",
     }),
+  })
+  .use(markdownItMark)
+  .use(markdownItToc, {
+    format(x, htmlencode) {
+      return `<span>${htmlencode(x)}</span>`;
+    },
   });
 
 module.exports = markdown;

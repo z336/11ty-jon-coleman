@@ -1,0 +1,10 @@
+.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  a:not([href*="joncoleman.me/"]):not([href^="#"]):not([href^="/"]):after {
+    background-image: url("/assets/images/external-link-alt.svg");
+  }
+  .metadata li:before {
+    background-image: url("/assets/images/hash-alt.svg");
+  }
+}
