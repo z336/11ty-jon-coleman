@@ -1,0 +1,45 @@
+.arrow-right {
+  &:after {
+    display: inline-block;
+    width: 1.75em;
+    height: 0.75em;
+    background-image: url("/assets/images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    /* alternative text rules */
+    content: "(an internal link)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1.75em; /* the width of the icon */
+    margin-left: 0.25rem;
+    transform: translateX(0);
+    transition: transform 0.2s;
+  }
+  &:is(:hover, :focus):after {
+    transform: translateX(30%);
+  }
+}
+
+.arrow-up {
+  &:after {
+    display: inline-block;
+    width: 1.75em;
+    height: 0.75em;
+    background-image: url("/assets/images/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    /* alternative text rules */
+    content: "(link to the top)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1.75em; /* the width of the icon */
+    margin-left: 0.25rem;
+    transform: translateY(0);
+    transition: transform 0.2s;
+  }
+  &:is(:hover, :focus):after {
+    transform: translateY(-30%);
+  }
+}

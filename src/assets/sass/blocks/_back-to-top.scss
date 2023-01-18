@@ -1,22 +1,6 @@
 .back-to-top {
-  max-width: 50ch;
-  font-size: var(--step-1);
-  text-align: center;
+  max-width: var(--measure);
   padding-block-start: var(--space-l-xl);
   margin-block-start: var(--space-l-xl);
   border-block-start: solid 0.2rem;
-  a:after {
-    display: inline-block;
-    width: 1.25em;
-    height: 1.25em;
-    background-image: url("/assets/images/arrow-up.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60% auto;
-    /* alternative text rules */
-    content: "(external link)";
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 1.25em; /* the width of the icon */
-  }
 }

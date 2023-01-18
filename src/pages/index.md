@@ -4,7 +4,7 @@ layout: page.html
 permalink: /
 ---
 
-==**My name is Jon**== and I write for the web as a ==**technical and UX writer**==. I am also interested in ==**web development**==, ==**web design**==, and ==**accessibility**==.
+==**My name is Jon**== I am a ==**technical writer**== and ==**web designer**==. I am interested in ==**documentation**== and ==**accessible**==, ==**inclusive**== websites.
 
 This site is not tracking you, but you can subscribe to the [RSS](/feed/feed.xml/) feed if would like to track it.
 

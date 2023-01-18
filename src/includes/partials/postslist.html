@@ -1,21 +1,21 @@
-{% assign listItemHeading = 'h2' %} 
+{% assign heading = 'h2' %} 
 
 {% if page.url == '/' %} 
-{% assign listItemHeading = 'h3' %}
+{% assign heading = 'h3' %}
 <h2>Latest</h2>
 {% endif %}
 
 <ul class="flow | list" role="list">
   {% for post in postslist %}
   <li>
-    <{{ listItemHeading }}>
+    <{{ heading }}>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </{{ listItemHeading }}>
-    <time datetime="{{post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
+    </{{ heading }}>
+    <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
   </li>
   {% endfor %}
 </ul>
 
 {% if page.url == '/' %} 
-<a href="/writing/">View all</a>
+<a class="arrow-right" href="/writing/">View all posts</a>
 {% endif %}
