@@ -1,14 +1,16 @@
-<ul class="flow | notes | list" role="list">
+<ul class="flow | notes" role="list">
   {% for note in notes %}
   <li class="metadata">
-    <h2><a href="{{ note.url }}">{{ note.title }}</a></h2>
-    <time datetime="{{ note.date | htmlDateString }}">{{ note.date | readableDate }}</time>
-    <p class="region">{{ note.description}}</p>
-    <ul class="cluster" role="list">
-      {%- for tag in note.tags -%}
-      <li>{{ tag }}</li>
-      {%- endfor -%}
-    </ul>
+    <div>
+      <h2><a href="{{ note.url }}">{{ note.title }}</a></h2>
+      <time datetime="{{ note.date | htmlDateString }}">{{ note.date | readableDate }}</time>
+      <p class="region">{{ note.description}}</p>
+      <ul class="cluster" role="list">
+        {%- for tag in note.tags -%}
+        <li>{{ tag }}</li>
+        {%- endfor -%}
+      </ul>
+    </div>
   </li>
   {% endfor %}
 </ul>
