@@ -2,6 +2,7 @@
   ul {
     padding-block-start: var(--space-3xs-2xs);
     padding-inline-start: 0;
+    // Account for hash symbol
     margin-inline-start: -0.5rem;
 
     li:before {
@@ -18,5 +19,9 @@
       white-space: nowrap;
       text-indent: 1.25em; /* the width of the icon */
     }
+  }
+  p {
+    --region-space-start: var(--space-xs-s);
+    --region-space-end: var(--space-xs-s);
   }
 }

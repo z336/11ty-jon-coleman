@@ -8,18 +8,9 @@
   blockquote {
     max-width: var(--measure);
   }
-}
-
-// Flow space under headings and between multiple paragraphs
-.prose :is(h2, h3, h4) + *,
-p + p {
-  --flow-space: var(--space-s-m);
-}
-
-.prose .heading-anchor:is(:hover, :focus) {
-  text-decoration: solid underline 0.1rem;
-  text-underline-offset: 0.35rem;
-}
-.prose .heading-anchor {
-  text-decoration: none;
+  // Flow space under headings and between multiple paragraphs
+  & :is(h2, h3, h4) + *,
+  p + p {
+    --flow-space: var(--space-s-m);
+  }
 }

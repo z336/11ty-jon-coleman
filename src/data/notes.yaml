@@ -1,12 +1,4 @@
 - note:
-  title: I found this online
-  date: 2022-12-19
-  description: lorem ipsum satanico
-  url: https://duckduckgo.com/
-  tags:
-    - apple
-    - banana
-- note:
   title: I found this too
   date: 2022-12-24
   description: lorem ipsum satanico something something
@@ -14,3 +6,11 @@
   tags:
     - lime
     - chocolate
+- note:
+  title: I found this online
+  date: 2022-12-19
+  description: lorem ipsum satanico
+  url: https://duckduckgo.com/
+  tags:
+    - apple
+    - banana

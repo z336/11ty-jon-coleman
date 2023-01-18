@@ -1,23 +1,21 @@
 .heading-anchor {
   text-decoration: none;
-}
-
-.heading-anchor:is(:hover, :focus) {
-  text-decoration: solid underline 0.2rem;
-  text-underline-offset: 0.35rem;
-}
-
-.heading-anchor:is(:hover, :focus):after {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-image: url("/assets/images/link.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60% auto;
-  /* alternative text rules */
-  content: "(heading anchor link)";
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
+  &:after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("/assets/images/link.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    // alternative text rules
+    content: "(heading anchor link)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1em; // the width of the icon
+  }
+  &:is(:hover, :focus) {
+    text-decoration: solid underline 0.2rem;
+    text-underline-offset: 0.35rem;
+  }
 }

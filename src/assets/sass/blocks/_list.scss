@@ -1,4 +1,5 @@
 .list {
+  --flow-space: var(--space-m-l);
   padding-inline-start: var(--space-s-l);
   border-inline-start: solid 0.2rem;
   // li:not(:first-of-type) h2 {
@@ -7,4 +8,8 @@
   // li:not(:first-of-type) h3 {
   //   margin-block-start: var(--space-2xs-xs);
   // }
+}
+
+.notes.list {
+  --flow-space: var(--space-l-xl);
 }

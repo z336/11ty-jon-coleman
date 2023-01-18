@@ -97,6 +97,7 @@ button {
 }
 
 mark {
+  padding: 0.2rem;
   background-color: var(--color-highlight);
 }
 
@@ -132,6 +133,7 @@ ol {
 
 :focus {
   outline: solid var(--color-dark) 0.2rem;
+  text-decoration: none;
 }
 
 ::selection {
