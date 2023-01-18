@@ -1,7 +1,7 @@
 .wrapper {
   max-width: var(--wrapper-max-width, 90ch);
-  padding-inline-start: var(--space-2xs);
-  padding-inline-end: var(--space-2xs);
+  padding-inline-start: var(--gutter);
+  padding-inline-end: var(--gutter);
   margin-inline-start: auto;
   margin-inline-end: auto;
 }

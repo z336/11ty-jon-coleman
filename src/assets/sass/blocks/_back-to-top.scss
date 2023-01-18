@@ -2,9 +2,9 @@
   max-width: 50ch;
   font-size: var(--step-1);
   text-align: center;
-  padding-top: var(--space-m-l);
-  margin-top: var(--space-l-xl);
-  border-top: solid 0.2rem;
+  padding-block-start: var(--space-l-xl);
+  margin-block-start: var(--space-l-xl);
+  border-block-start: solid 0.2rem;
   a:after {
     display: inline-block;
     width: 1.25em;

@@ -52,10 +52,6 @@ h6 {
   text-transform: uppercase;
 }
 
-strong {
-  font-family: AuthenticBold;
-}
-
 a {
   color: currentColor;
   text-decoration: underline 0.2rem;
@@ -80,9 +76,36 @@ a:not([href*="joncoleman.me/"]):not([href^="#"]):not([href^="/"]):after {
   text-indent: 1em; /* the width of the icon */
 }
 
+footer {
+  --region-space-start: var(--space-l-xl);
+  --region-space-end: var(--space-l-xl);
+  --flow-space: var(--space-l-xl);
+  p + ul {
+    --flow-space: var(--space-3xs-2xs);
+  }
+}
+
+strong {
+  font-family: AuthenticBold;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  line-height: 1;
+}
+
+ul,
+ol {
+  line-height: 1.75;
+}
+
 hr {
   border: none;
-  border-top: solid 0.2rem var(--color-dark);
+  border-block-start: solid 0.2rem var(--color-dark);
 }
 
 time {
@@ -90,10 +113,6 @@ time {
   opacity: 0.85;
   display: block;
   padding-block: var(--space-3xs-2xs);
-}
-
-button {
-  cursor: pointer;
 }
 
 mark {
@@ -121,14 +140,12 @@ mark::after {
   content: " [highlight end] ";
 }
 
-ul[role="list"],
-ol[role="list"] {
-  line-height: 1;
-}
-
-ul,
-ol {
-  line-height: 1.75;
+blockquote {
+  padding-inline-start: var(--space-m-l);
+  border-inline-start: solid 0.2rem;
+  font-size: var(--step-1);
+  font-family: var(--font-mono);
+  font-style: italic;
 }
 
 :focus {
@@ -139,13 +156,4 @@ ol {
 ::selection {
   color: var(--color-light);
   background-color: var(--color-dark);
-}
-
-footer {
-  --region-space-start: var(--space-l-xl);
-  --region-space-end: var(--space-l-xl);
-  --flow-space: var(--space-l-xl);
-  p + ul {
-    --flow-space: var(--space-3xs-2xs);
-  }
 }

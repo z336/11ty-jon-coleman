@@ -4,10 +4,10 @@
   --flow-space: var(--space-l-xl);
   p,
   ul,
-  ol,
-  blockquote {
+  ol {
     max-width: var(--measure);
   }
+
   // Flow space under headings and between multiple paragraphs
   & :is(h2, h3, h4) + *,
   p + p {

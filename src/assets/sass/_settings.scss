@@ -1,6 +1,6 @@
 :root {
   --color-dark: #070a10;
-  --color-light: #f3f3ed;
+  --color-light: #faf8f5;
   --color-highlight: #ffe34c;
 
   --font-display: AlteHaas, Helvetica, Arial, sans-serif;
@@ -9,6 +9,7 @@
   --font-mono: monospace;
 
   --measure: 60ch;
+  --gutter: var(--space-3xs-2xs);
 
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1350,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
