@@ -15,7 +15,9 @@ const getFullYear = () => {
 
 // Filter non-category tags
 const filterTagList = (tags) => {
-  return (tags || []).filter((tag) => ["all", "post", "posts"].indexOf(tag) === -1);
+  return (tags || []).filter(
+    (tag) => ["all", "note", "notes", "post", "posts"].indexOf(tag) === -1
+  );
 };
 
 module.exports = {

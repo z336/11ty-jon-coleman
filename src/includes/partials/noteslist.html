@@ -1,13 +1,15 @@
 <ul class="flow | notes" role="list">
-  {% for note in notes %}
+  {% for note in noteslist %} {% assign tags = note.data.tags | filterTagList | sort %}
   <li class="metadata">
     <div>
-      <h2><a href="{{ note.url }}">{{ note.title }}</a></h2>
-      <time datetime="{{ note.date | htmlDateString }}">{{ note.date | readableDate }}</time>
-      <p class="region">{{ note.description}}</p>
+      <h2><a href="{{ note.data.url }}">{{ note.data.title }}</a></h2>
+      <time datetime="{{ note.data.date | htmlDateString }}"
+        >{{ note.data.date | readableDate }}</time
+      >
+      <p class="region">{{ note.data.description}}</p>
       <ul class="cluster" role="list">
-        {%- for tag in note.tags -%}
-        <li>{{ tag }}</li>
+        {%- for tag in tags -%}
+        <li data-tag="{{ tag }}">{{ tag }}</li>
         {%- endfor -%}
       </ul>
     </div>
