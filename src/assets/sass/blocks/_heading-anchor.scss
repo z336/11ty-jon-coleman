@@ -1,7 +1,7 @@
 .heading-anchor {
   text-decoration: none;
   &:is(:hover, :focus) {
-    text-decoration: solid underline 0.2rem;
+    text-decoration: solid underline var(--border-line);
     text-underline-offset: 0.35rem;
     &:after {
       display: inline-block;

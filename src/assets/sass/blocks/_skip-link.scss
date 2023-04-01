@@ -19,7 +19,7 @@
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: var(--space-m-l);
-  border-block-end: dashed 0.2rem;
+  border-block-end: dashed var(--border-line);
   text-align: center;
   line-height: 1;
 }

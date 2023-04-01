@@ -15,7 +15,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",
     "code-tag": "^1.1.0",
