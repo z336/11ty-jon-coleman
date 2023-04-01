@@ -11,3 +11,7 @@ This site is not tracking you, but you can subscribe to the [RSS](/feed/feed.xml
 {% assign postslist = collections.posts | slice: 0, 3 %}
 
 {% include 'partials/postslist.html' %}
+
+{% include 'partials/about.html' %}
+
+{% include 'partials/backtotop.html' %}

@@ -20,9 +20,6 @@ layout: base.html
   <article class="wrapper | region | flow | prose">
     {% if description %}
     <p class="tldr"><mark class="display">tldr</mark> — {{ description }}</p>
-    {% endif %} {{ content }}
-    <div class="back-to-top">
-      <a class="arrow-up" href="#the-top">Back to top</a>
-    </div>
+    {% endif %} {{ content }} {% include 'partials/backtotop.html' %}
   </article>
 </article>
