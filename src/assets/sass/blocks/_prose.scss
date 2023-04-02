@@ -1,16 +1,21 @@
 .prose {
   --region-space-start: var(--space-l-xl);
   --region-space-end: var(--space-l-xl);
-  --flow-space: var(--space-l-xl);
   p,
   ul,
   ol {
     max-width: var(--measure);
   }
 
-  // Flow space under headings and between multiple paragraphs
-  & :is(h2, h3, h4) + *,
-  p + p {
+  & :is(h2, h3, h4, blockquote) {
+    --flow-space: var(--space-l-xl);
+  }
+
+  & :is(blockquote) + * {
+    --flow-space: var(--space-l-xl);
+  }
+
+  & :is(h2, h3, h4) + * {
     --flow-space: var(--space-s-m);
   }
 }
