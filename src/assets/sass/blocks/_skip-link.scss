@@ -19,8 +19,9 @@
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: var(--space-m-l);
-  border-block-end: dashed var(--border-line);
+  border: dashed var(--border-line);
   text-align: center;
+  text-decoration: underline var(--border-line);
   line-height: 1;
 }
 

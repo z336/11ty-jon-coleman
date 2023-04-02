@@ -52,6 +52,11 @@ h6 {
   text-transform: uppercase;
 }
 
+h2,
+h3 {
+  scroll-margin-block-start: var(--gutter);
+}
+
 a {
   color: currentColor;
   text-decoration: underline var(--border-line);
@@ -156,4 +161,8 @@ blockquote {
 ::selection {
   color: var(--color-light);
   background-color: var(--color-dark);
+}
+
+#the-top {
+  scroll-margin-block-start: var(--gutter);
 }
