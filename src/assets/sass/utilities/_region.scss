@@ -2,3 +2,7 @@
   padding-block-start: var(--region-space-start, var(--space-l-2xl));
   padding-block-end: var(--region-space-end, var(--space-l-2xl));
 }
+
+.view-all {
+  --region-space-end: 0;
+}

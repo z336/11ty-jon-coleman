@@ -2,24 +2,25 @@
 layout: base.html
 ---
 
+<header class="region | page-header | invert">
+  <div class="wrapper | metadata">
+    <h1>{{ title }}</h1>
+    {% if date %}
+    <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    {% endif %} {% if tags %} {% assign tags = tags | filterTagList | sort %}
+    <ul class="cluster" role="list">
+      {% for tag in tags %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</header>
 <article>
-  <header class="region | page-header | invert">
-    <div class="wrapper | metadata">
-      <h1>{{ title }}</h1>
-      {% if date %}
-      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-      {% endif %} {% if tags %} {% assign tags = tags | filterTagList | sort %}
-      <ul class="cluster" role="list">
-        {% for tag in tags %}
-        <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-  </header>
-  <article class="wrapper | region | flow | prose">
-    {% if description %}
+  <div class="wrapper | region | flow | prose">
+    {%- if description -%}
     <p class="tldr"><mark class="display">tldr</mark> — {{ description }}</p>
-    {% endif %} {{ content }} {% include 'partials/backtotop.html' %}
-  </article>
+    {%- endif -%} {{ content }}
+  </div>
+  {% include 'partials/backtotop.html' %}
 </article>

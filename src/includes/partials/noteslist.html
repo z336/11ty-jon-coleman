@@ -1,18 +1,23 @@
-<ul class="flow | notes" role="list">
-  {% for note in noteslist %} {% assign tags = note.data.tags | filterTagList | sort %}
-  <li class="metadata">
-    <div>
-      <h2><a href="{{ note.data.url }}">{{ note.data.title }}</a></h2>
-      <time datetime="{{ note.data.date | htmlDateString }}"
-        >{{ note.data.date | readableDate }}</time
-      >
-      <p class="region">{{ note.data.description}}</p>
-      <ul class="cluster" role="list">
-        {%- for tag in tags -%}
-        <li data-tag="{{ tag }}">{{ tag }}</li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+<article class="wrapper | region | flow | prose">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad et hic autem quas quod voluptatum.
+  </p>
+  <ul class="flow | notes" role="list">
+    {%- for note in noteslist %} {% assign tags = note.data.tags | filterTagList | sort -%}
+    <li class="metadata">
+      <div>
+        <h2><a href="{{ note.data.url }}">{{ note.data.title }}</a></h2>
+        <time datetime="{{ note.data.date | htmlDateString }}"
+          >{{ note.data.date | readableDate }}</time
+        >
+        <p class="region">{{ note.data.description}}</p>
+        <ul class="cluster" role="list">
+          {%- for tag in tags -%}
+          <li data-tag="{{ tag }}">{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</article>

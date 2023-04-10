@@ -1,8 +1,12 @@
 {% assign heading = 'h2' %} 
-
 {% if page.url == '/' %} 
 {% assign heading = 'h3' %}
-<h2>Latest</h2>
+{% endif %}
+
+<article class="wrapper | region | flow | prose">
+
+{% if page.url == '/writing/' %}
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut ipsam minus facere et sequi tempora eum.</p>
 {% endif %}
 
 <ul class="flow | list" role="list">
@@ -15,7 +19,6 @@
   </li>
   {% endfor %}
 </ul>
+</article>
 
-{% if page.url == '/' %} 
-<p><a class="arrow-right" href="/writing/">View all posts</a></p>
-{% endif %}
+

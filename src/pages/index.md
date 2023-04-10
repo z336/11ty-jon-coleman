@@ -8,7 +8,7 @@ permalink: /
 
 {% include 'partials/cta.html' %}
 
-{% include 'partials/postslist.html' %}
+{% include 'partials/latestposts.html' %}
 
 {% include 'partials/about.html' %}
 
