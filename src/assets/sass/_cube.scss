@@ -2,6 +2,7 @@
 
 @use "./compositions/cluster";
 @use "./compositions/grid";
+@use "./compositions/repel";
 @use "./compositions/sidebar";
 
 // Utilities
@@ -19,7 +20,6 @@
 @use "./blocks/cta";
 @use "./blocks/heading-anchor";
 @use "./blocks/list";
-@use "./blocks/menu";
 @use "./blocks/metadata";
 @use "./blocks/notes";
 @use "./blocks/page-header";
